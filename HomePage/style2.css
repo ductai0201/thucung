@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'ThuCung';
+  src: url('/asset/font/ThuCung-Font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDownFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.container-cs {
+  max-width: 1472px;
+  padding: 4px 28px;
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+.slide-out {
+  animation: slideOut 0.3s ease-out;
+}
+
+
+body {
+  /* font-family: 'ThuCung'; */
+  font-family: 'Helvetica', sans-serif;
+}
+
+:root {
+  --primary-color: #e30613;
+  --second-color: #313131;
+  --three-color: #5b5b5b;
+  --four-color: #ffffff;
+  --five-color: #a9a9a9;
+  --six-color: #f0f0f0;
+  --seven: #f9f9f9;
+  --eight: #00C97C;
+  --nine: #FDE8E8;
+  --ten: #EEE9E9;
+  --elevent: #ff202b79;
+  --twelve:#e0e6ef;
+}
+
+/* .font-1 {
+  font-family: "Quicksand", sans-serif;
+} */
+
+.titleSectionContainerHp {
+  font-size: 28px;
+}
+
+.slider {
+  height: 100%;
+  width: 100%;
+}
+
+.slick-button {
+  height: 24px;
+  width: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.paidAdvertising {
+  background-image: url('/asset/banner/sanphamquangcao.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.paidAdvertising-submit {
+  background-color: var(--primary-color);
+  color: var(--four-color);
+  padding: 12px 0;
+  border-radius: 8px;
+}
+
+.saleGift-container {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(252, 173, 239, 1) 100%);
+}
+
+.productSaleGift--left {
+  font-size: 28px;
+}
+
+.productSaleGift--right {
+  font-size: 18px;
+  color: var(--primary-color)
+}
+
+/*Giá trong tuần */
+.priceWeek{
+  background-color: var(--primary-color);
+  width: max-content;
+}
+.priceWeek span{
+  color:var(--four-color)
+}
+/* list product */
+.textGift {
+  color: var(--four-color);
+  background-color: var(--primary-color);
+}
+
+.discountOptionProductCoupon {
+  background-color: var(--eight);
+  color: var(--four-color);
+}
+
+.DiscountOptionProduct-content--title:hover {
+  color: var(--primary-color);
+}
+
+.priceProduct:hover {
+  color: var(--primary-color);
+}
+
+.giftDiscountOptionProduct-content {
+  background-color: var(--seven);
+  border-radius: 0 0 15px 15px;
+}
+
+.textReview {
+  color: var(--eight);
+}
+
+.bgReview2 {
+  background-color: var(--nine);
+}
+
+.giftDiscountOptionProduct {
+  border-color: var(--five-color);
+}
+
+/*end list product */
+
+/*copy right */
+.copyrightContainer {
+  background-color: var(--ten);
+}
+
+/*banner sale body */
+.imageBannerSale {
+  width: 100%;
+}
+
+
+/*product best selling */
+
+.textGift {
+  color: var(--four-color);
+  background-color: var(--primary-color);
+}
+
+.BestSellingProductCoupon {
+  background-color: var(--eight);
+  color: var(--four-color);
+}
+
+.BestSellingProduct-content--title:hover {
+  color: var(--primary-color);
+}
+
+.priceProduct:hover {
+  color: var(--primary-color);
+}
+
+.textReview {
+  color: var(--eight);
+}
+
+.bgReview2 {
+  background-color: var(--nine);
+}
+
+/*end best selling */
+
+/*locationOptionText*/
+.locationOptionText {
+  font-size: 14px;
+}
+
+.free-shipContainer {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(12, 179, 0, 1) 100%);
+  width: 100px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.linearFreeShip {
+  position: absolute;
+  right: 0;
+}
+
+/*end locationOptionText */
+/*flash sale */
+
+.saleSock {
+  color: var(--primary-color);
+}
+
+
+.contentFlashSale {
+  background-color: var(--seven);
+  border-radius: 0 0 15px 15px;
+}
+
+.titleFlashSale:hover {
+  color: var(--primary-color);
+}
+
+.priceFlashSale {
+  color: var(--primary-color);
+}
+
+.scrollSelling {
+  background-color: var(--elevent)
+}
+
+.scrollSelling-1 {
+  background-color: var(--primary-color)
+}
+
+/* end flash sale */
+/*discountOffersTitle */
+.discountOffersTitle {
+  color: var(--primary-color);
+}
+
+.seeAlsoText {
+  color: var(--primary-color)
+}
+
+/*end discountOffersTitle */
+
+/*thanh tiến độ */
+.priceWeekProductProgress-container {
+  background-color: var(--twelve);
+  height: 5px;
+  position: relative;
+}
+
+.priceWeekProductProgress-bar{
+  background-color: var(--primary-color);
+  height: 100%;
+}
+.amoutProduct{
+  color:var(--elevent)
+}
+.priceProductDontSale,.priceProductSalePercent{ 
+  color: var(--elevent);
+}
+/* end thanh tiến độ */
